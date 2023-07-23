@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    
+    <div class="container">
+      <img id="brainImg" alt="" />
+      <h3>Brain Viewer</h3>
+      <div id="title" class="title"></div>
+      <button id="Toggle_parallel" class="btn">Toggle parallel <i id="switch">(off)</i></button>
+      <!-- <button id="Distance" class="btn">Add line <i  id="length"></i></button> -->
+      <div id="drop-area">
+        <form class="my-form">
+          <p>Drag and drop NIFTIS onto the dashed region</p>
+          <input type="file" name="files[]" id="files" multiple>
+          <label class="button" for="files">Select some files</label>
+        </form>
+      </div>
+      <table class="btn" style="margin-top: 7%;">
+        <tr>
+          <td>pickable</td>
+          <td>
+            <input class='flag' data-name="pickable" type="checkbox"  checked />
+          </td>
+        </tr>
+        <tr>
+          <td>visibility</td>
+          <td>
+            <input class='flag' data-name="visibility" type="checkbox"  checked />
+          </td>
+        </tr>
+        <tr>
+          <td>contextVisibility</td>
+          <td>
+            <input class='flag' data-name="contextVisibility" type="checkbox"  checked />
+          </td>
+        </tr>
+        <tr>
+          <td>handleVisibility</td>
+          <td>
+            <input class='flag' data-name="handleVisibility" type="checkbox" checked />
+          </td>
+        </tr>
+        <tr>
+          <td>FaceHandlesEnabled</td>
+          <td>
+            <input class='flag' data-name="FaceHandlesEnabled" type="checkbox" checked />
+          </td>
+        </tr>
+        <tr>
+          <td>edgeHandlesEnabled</td>
+          <td>
+            <input class='flag' data-name="edgeHandlesEnabled" type="checkbox"  checked />
+          </td>
+        </tr>
+        <tr>
+          <td>CornerHandlesEnabled</td>
+          <td>
+            <input class='flag' data-name="CornerHandlesEnabled" type="checkbox" checked />
+          </td>
+        </tr>
+      </table>
+      <button id="mult_slice" class="btn">Multiple Slice</button>
+      <table>
+        <tr>
+          <!-- sagital -->
+            <td>Sagital</td>
+            <td>
+                <input class='sliceI' type="range" min="0" max="2.0" step="1" value="1" id="I" />
+            </td>
+        </tr>
+        <tr>
+          <!-- coronal -->
+            <td>Coronal</td>
+            <td>
+                <input class='sliceJ' type="range"  step="1"  id="J" />
+            </td>
+        </tr>
+        <tr>
+          <!-- axial -->
+            <td>Axial</td>
+            <td>
+                <input class='sliceK' type="range"  step="1"  id="K" />
+            </td>
+        </tr>
+        <tr>
+            <td>Color level</td>
+            <td>
+                <input class='colorLevel' type="range" step="1"  id="clevel" />
+            </td>
+        </tr>
+        <tr>
+            <td>Color Window</td>
+            <td>
+                <input class='colorWindow' type="range" step="1" id="wlevel" />
+            </td>
+        </tr>
+    </table>
+    </div>
+  </body>
+</html>
+
+
+
