@@ -14,7 +14,7 @@ Includes the following features...
 
 ## Usage
 
-Run Dev Server (Port 3000)
+Run Dev Server 
 
 ```
   npm run dev
@@ -28,8 +28,8 @@ npm run build
 
 ## Demo App
 
-The demo app is a very simple Joke generator. Replace with your own code and install other packages as needed
+The demo app is VTK nifti viewer. Replace with your own code and install other packages as needed
 
 - index.js (main javascript)
-- template.html (template)
+- index.html 
 - styles/main.scss (styles)
